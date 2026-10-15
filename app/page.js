@@ -52,7 +52,7 @@ export default function Home() {
               <ul>
                 <li><b>Fresh ingredients.</b> Salad and sauces are prepared daily.</li>
                 <li><b>Quality food.</b> Smoki chicken and beef patties grilled to order.</li>
-                <li><b>Unforgettable taste.</b> Special sauces you won't find anywhere else.</li>
+                <li><b>Unforgettable taste.</b> Special sauces you wont find anywhere else.</li>
               </ul>
             </div>
           </div>
@@ -66,12 +66,12 @@ export default function Home() {
               {menu.map((m) => (
                 <article className="card" key={m.id}>
                   <div className="ph"><img src={m.img} alt={`${m.name} at Smoki Bite`} width={184} height={184} loading="lazy" /></div>
-                  <>
+                  <div className="content">
                     <h3>{m.name}</h3>
                     <span className="opt">{m.options}</span>
                     <p>{m.desc}</p>
                     <div className="f"><span className="price">{price(m.price)}</span><a className="btn btn-fire" href="#order">Order</a></div>
-                  </>
+                  </div>
                 </article>
               ))}
             </div>

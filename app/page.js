@@ -133,17 +133,32 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="ft">
-        <div className="wrap">
-          <div>
-            <Image className="logo-img" src="/img/logo-1line.jpg" alt="Smoki Bite" width={220} height={70} />
-            <p className="lead" style={{ marginTop: 14 }}>Bold flavors, real taste. {site.tagline}</p>
-          </div>
-          <div><h4>Quick links</h4><ul><li><a href="#about">About us</a></li><li><a href="#menu">Menu</a></li><li><a href="#order">Order now</a></li><li><a href="#reviews">Reviews</a></li></ul></div>
-          <div><h4>Follow us</h4><ul><li><a href={site.instagram} rel="noopener">Instagram</a></li><li><a href={site.facebook} rel="noopener">Facebook</a></li><li><a href={wa} rel="noopener">WhatsApp</a></li></ul></div>
-        </div>
-        <p className="copy">© {new Date().getFullYear()} Smoki Bite. Fresh ingredients · Quality food · Unforgettable taste.</p>
-      </footer>
+     <footer className="ft">
+  <div className="wrap">
+    <div>
+      <Image className="logo-img" src="/img/logo-1line.jpg" alt="Smoki Bite" width={220} height={70} />
+      <p className="lead" style={{ marginTop: 14 }}>Bold flavors, real taste. {site.tagline}</p>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order now</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Follow us</h4>
+      <ul>
+        <li><a href={site.instagram} rel="noopener">Instagram</a></li>
+        <li><a href={site.facebook} rel="noopener">Facebook</a></li>
+        <li><a href={wa} rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <p className="copy">© {site.year} Smoki Bite. Fresh ingredients · Quality food · Unforgettable taste.</p>
+</footer>
       <a className="wa" href={wa} rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
     </>
   );

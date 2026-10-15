@@ -11,7 +11,7 @@ export default function Nav() {
     <header className="hdr">
       <div className="wrap">
         <a className="brand" href="#top" aria-label="Smoki Bite home">
-          <Image className="logo-img" src="/img/logo-1line.jpg" alt="Smoki Bite logo" width={145} height={46} priority />
+          <Image className="logo-img" src="/img/logo-1line.png" alt="Smoki Bite logo" width={145} height={46} priority />
         </a>
         <button className="burger" aria-label="Toggle menu" aria-expanded={open} onClick={() => setOpen(!open)}>{open ? "✕" : "☰"}</button>
         <nav className={open ? "open" : ""} aria-label="Main">

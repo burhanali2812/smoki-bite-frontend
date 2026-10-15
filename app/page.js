@@ -136,7 +136,7 @@ export default function Home() {
      <footer className="ft">
   <div className="wrap">
     <div>
-      <Image className="logo-img" src="/img/logo-1line.jpg" alt="Smoki Bite" width={220} height={70} />
+      <Image className="logo-img" src="/img/logo-1line.png" alt="Smoki Bite" width={220} height={70} />
       <p className="lead" style={{ marginTop: 14 }}>Bold flavors, real taste. {site.tagline}</p>
     </div>
     <div>
